@@ -1,12 +1,9 @@
-/*
-Programmer: Javian Cumminsg
-Date: December 9, 2020
-Descripiton: This program is designed has a rental stytem to collect information on textbook for student union.
-*/
 #include<stdio.h>
 #include<string.h>
 #include<conio.h>
 #include<windows.h>
+#define N 4
+#define sec 200
 int main(){//START
 	// Declare Local Variables.
 	int cnt=0, i, books;
@@ -34,11 +31,11 @@ int main(){//START
     // Prompts with welcome message to tell user to enter any key.
     printf("\n\t\tPLEASE ENTER ANY KEY TO CONTINUE");
     // to prompt to the user four dots on the screen.
-	for(i=0; i<4; i++)
+	for(i=0; i<N; i++)
     {
     	// prompts user dots.
         printf(".");
-        Sleep(200);//after printing one . another comes after 0.2 seconds
+        Sleep(sec);//after printing one . another comes after 0.2 seconds
     }
     // Pause the screen.
     getch();
